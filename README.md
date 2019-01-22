@@ -4,11 +4,11 @@ Example code to perform linear mixed effects regression in a Bayesian setting us
 
 Adapted from:
 
-	* 	https://docs.pymc.io/notebooks/getting_started
-	* 	https://github.com/fonnesbeck/PyMC3_Oslo/blob/master/notebooks/b.%20Multilevel%20Modeling.ipynb
-	*	https://github.com/pymc-devs/pymc3/blob/master/pymc3/examples/data/cty.dat
+	 	https://docs.pymc.io/notebooks/getting_started
+	 	https://github.com/fonnesbeck/PyMC3_Oslo/blob/master/notebooks/b.%20Multilevel%20Modeling.ipynb
+		https://github.com/pymc-devs/pymc3/blob/master/pymc3/examples/data/cty.dat
 
 Usage:
 
-   python3 pooled_model_example.py
+        python3 pooled_model_example.py
 
