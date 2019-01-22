@@ -24,6 +24,12 @@ import pymc3 as pm
 import pdb
 
 ########################################
+# MCMC parameters
+########################################
+i_num_samples = 2000
+i_burnin      = 1000
+
+########################################
 # Import radon data
 ########################################
 srrs2 = pd.read_csv('radon.csv')
@@ -87,13 +93,13 @@ with Model() as pooled_model:
     y = Normal('y', theta, sd=sigma, observed=log_radon)
 
 with pooled_model:
-    pooled_trace = sample(2000)
+    pooled_trace = sample(i_num_samples)
 
 
 ########################################
 # Plots
 ########################################
-b0, m0 = pooled_trace['beta', 1000:].mean(axis=0)
+b0, m0 = pooled_trace['beta', i_burnin:].mean(axis=0)
 
 plt.figure()
 plt.scatter(srrs_mn.floor, np.log(srrs_mn.activity+0.1))
