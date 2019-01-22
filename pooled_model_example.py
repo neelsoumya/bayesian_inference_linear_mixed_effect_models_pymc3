@@ -18,7 +18,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pymc3 import Model, sample, Normal, HalfCauchy, Uniform
-from pymc3 import forestplot
+from pymc3 import forestplot, summary
 import pymc3 as pm
 
 import pdb
