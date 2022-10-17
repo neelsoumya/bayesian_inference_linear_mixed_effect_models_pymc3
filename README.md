@@ -12,3 +12,6 @@ Usage:
 
         python3 pooled_model_example.py
 
+Installation:
+
+	pip3 install -r requirements.txt
