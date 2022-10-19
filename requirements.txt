@@ -1,4 +1,4 @@
 numpy
 pandas
 pymc3
-
+seaborn
